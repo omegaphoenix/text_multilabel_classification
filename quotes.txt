@@ -31,7 +31,7 @@ Our offense is like the pythagorean theorem: There is no answer!	"Shaq,Winning"
 Art is a process of delivering or arranging elements that appeal to the emotions of a person looking at it. It's what you feel.	Shaq
 "When I tweet, I try and accomplish three things. One, is to make you laugh. Two, is to inform you. Three, is to enlighten you. That's all I do."	Shaq
 "I'm a weird big guy. Doing rapping, doing movies. Do a lot of stuff. But always do things the right way."	Shaq
-"I want to be known as 'The Big Shakespeare.' It was Shakespeare that said, 'Some men are born great, some achieve greatness, some have greatness thrust upon them.'"	"Shaq,Nickname,Winning"
+"I want to be known as 'The Big Shakespeare.' It was Shakespeare that said, 'Some men are born great, some achieve greatness, some have greatness thrust upon them.'"	"Shaq,Nickname"
 "I'm tired of hearing about money, money, money, money, money. I just want to play the game, drink Pepsi, wear Reebok."	Shaq
 "I'm an unorthodox type of guy, a funny guy - at least I think I'm funny. And one of the things I like to do is come up with nicknames for myself."	"Shaq,Nickname"
 "I've been playing on Christmas for the last 10, 11, 12 years. So just got to get up early with the babies, and give them their toys and try to get a nap in and just come to play."	Shaq
@@ -164,7 +164,7 @@ I am a tropical black man.	Shaq
 "When you feed the big dog, it does whatever you tell him to do."	Shaq
 "You have to foul me to stop me, period."	"Shaq,Free Throws"
 "I'm dominant every night. I come in every night and get beat up. I never make a face when they try to flagrant or hack-a-Shaq me, because I'm not from this planet. Earthlings don't faze me."	Shaq
-"I painted my toenails before Dennis Rodman. One time at training camp, I stubbed my toe and the nail came loose. My mom gave me some toenail hardener, and I painted over it. I scored 40-something points that night, so it became a ritual. Paint my toenails, score 40 points."	Shaq
+"I painted my toenails before Dennis Rodman. One time at training camp, I stubbed my toe and the nail came loose. My mom gave me some toenail hardener, and I painted over it. I scored 40-something points that night, so it became a ritual. Paint my toenails, score 40 points."	"Shaq,Mom"
 "Once the Hack-a-Shaq works once, you know I'm going to see it again. The only thing worse for basketball than that defense is the Lack-a-Shaq offense, where I have to go to the bench because of foul trouble. There is no fun in that."	"Shaq,Free Throws"
 "Before I became the 'Great Test of the West,"" I was the 'Beast of the East.'"	"Shaq,Nickname"
 "I told my wife the other day, I'm the Halle Berry of the NBA. Everybody wants this, baby. Everybody wants me. "	Shaq
@@ -266,12 +266,12 @@ I'll beat you up right now if you want me to.	Shaq
 "If I was able to have the game I have and shoot 80% from the line, I'd probably be an arrogant person rather than a humble one. Everything happens for a reason."	Shaq
 "In this millennium that we live in, the 'Hack-a-Shaq'has proven not to work. It might work a couple games every now and then, but when it comes to the playoffs or a championship series, it doesn't work - not at all."	"Shaq,Free Throws,Winning"
 "A lot of coaches play percentages when it comes to me, but that's just a way of saying that you can't stop me."	"Shaq,Free Throws"
-(The Hack-A-Shaq is) just a way of telling me that you can't stop me. Thank you. I appreciate it.	"Shaq,Free Throws"
+(The Hack-A-Shaq is) just a way of telling me that you can't stop me. Thank you. I appreciate it.	"Shaq,Free Throws,Winning"
 I'd shoot zero percent before I'd shoot underhanded.	"Shaq,Free Throws"
 The only person who can really motivate you is you.	Shaq
 "I'm not worried about facing the Sacramento Queens. Write it down. Take a picture. I'm not going to talk about this all year. When I get back, there's going to be trouble."	Shaq
 "The first three championships that I won, I won them. I had big numbers and I won them. And last year, the guys won it for me. They won it for the big guy. Numbers are overrated. There's a lot of guys in this league who can say they've got great numbers. But they can't say they've got four rings in the last six years."	Shaq
-"It's just one more win. I don't give a [bleep] how we do it, as long as we get it done. Did I say [bleep]? I'm sorry."	Shaq
+"It's just one more win. I don't give a [bleep] how we do it, as long as we get it done. Did I say [bleep]? I'm sorry."	"Shaq,Winning"
 "If you go 72-11 and don't win (the championship), it doesn't mean anything. Actually it does. It means you've cheated and played an extra regular-season game."	"Shaq,Winning"
 "Their unselfishness, the way they play and their poise factor. When you never panic, that's a great sign."	Shaq
 "That game was dedicated to Rick Adelman. I'm at home, in the bathroom, trying to take a dump, flipping through the channels and he's complaining (on TV) about how I'm stepping over the line. I can't even do a No. 2 in peace. I'm sitting there grunting at 12:30 at night. Can I go one day without somebody saying something negative about me?"	Shaq
@@ -292,7 +292,7 @@ I'm the master marketer.	Shaq
 "If you don't like me, there must be something wrong with you."	Shaq
 "I said what I felt, and people try to control people. But you can never control me. I'm a 31-year-old juvenile delinquent. Nobody can control me."	Shaq
 They won't talk to you because I'm undercover.	Shaq
-I urge all children to listen to their mothers and fathers. My mom was helping out some kids and she didn't want to call me for all of the money; she only wanted to take care of some of the kids.	Shaq
+I urge all children to listen to their mothers and fathers. My mom was helping out some kids and she didn't want to call me for all of the money; she only wanted to take care of some of the kids.	"Shaq,Mom"
 "A lot of times when I buy a lot of toys, I get a little jealous and keep one or two for myself. So I've got a couple of drones. I've got a couple of remote-control cars. I like to have fun"	Shaq
 "You always have to take care of the sisters first, so my dad would buy Barbies and stuff and I wouldn't get anything. So I don't want any other kid to feel like that."	Shaq
 Good teams become great ones when the members trust each other enough to surrender the Me for the We.	"Phil,Teamwork"
@@ -306,4 +306,4 @@ No one plays this or any game perfectly.  It's the guy who recovers from his mis
 "In basketball - as in life - true joy comes from being fully present in each and every moment, not just when things are going your way. Of course, it's no accident that things are more likely to go your way when you stop worrying about whether you're going to win or lose and focus your full attention on what's happening right this moment. "	"Phil,Winning"
 "Winning is important to me, but what brings me real joy is the experience of being fully engaged in whatever I'm doing."	"Phil,Winning"
 Basketball is a sport that involves the subtle interweaving of players at full speed to the point where they are thinking and moving as one.	Phil
-"Yes, victory is sweet, but it doesn't necessarily make life any easier the next season or even the next day."	Phil
+"Yes, victory is sweet, but it doesn't necessarily make life any easier the next season or even the next day."	"Phil,Winning"

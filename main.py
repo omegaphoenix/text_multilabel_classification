@@ -1,22 +1,27 @@
 #!/bin/python
-# Example of multilabel classification
+# Example of multilabel classification using sklearn
+
+# Resources
 # http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html
 # http://scikit-learn.org/stable/modules/multiclass.html
 # https://stackoverflow.com/questions/10526579/use-scikit-learn-to-classify-into-multiple-categories
 
+import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.preprocessing import MultiLabelBinarizer
-import numpy as np
 from sklearn.pipeline import Pipeline
-from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.svm import LinearSVC
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn import metrics
+from sklearn.model_selection import train_test_split
 
 def validate_line(quote_and_label):
     return len(quote_and_label) == 2
 
+# Read file into two arrays
+# 1. input_quotes - list of all the quotes
+# 2. input_labels - list of list of labels e.g. [[label0, label1], [label0, label2], [label1], ...]
 def read_file(file_name):
     line_idx = 0
     # Array of quotes
@@ -44,6 +49,7 @@ def predict_labels(classifier, X_train, y_train, X_test, y_test, target_names):
         labels = [i for i, x in enumerate(predictions) if x]
         print('%s => %s' % (item, ', '.join(target_names[x] for x in labels)))
 
+# Precision and recall for each label
 def evaluate_model(classifier, X_train, y_train, X_test, y_test, target_names):
     classifier.fit(X_train, y_train)
     predicted = classifier.predict(X_test)
@@ -57,7 +63,10 @@ def main():
     # Represent labels as binary arrays
     mlb = MultiLabelBinarizer()
     binary_labels = mlb.fit_transform(input_labels)
-    labels_ordered = list(mlb.classes_)
+    target_names = list(mlb.classes_)
+
+    print(target_names)
+    X_train, X_test, y_train, y_test = train_test_split(input_quotes, binary_labels, test_size=0.33, random_state=16, stratify=binary_labels)
 
     # Pipeline for classification
     classifier = Pipeline([
@@ -65,8 +74,7 @@ def main():
         ('tfidf', TfidfTransformer()), # normalize
         ('clf', OneVsRestClassifier(LinearSVC()))]) # model for classification
 
-
-    predict_labels(classifier, input_quotes, binary_labels, input_quotes, binary_labels, labels_ordered)
-    evaluate_model(classifier, input_quotes, binary_labels, input_quotes, binary_labels, labels_ordered)
+    predict_labels(classifier, X_train, y_train, X_test, y_test, target_names)
+    evaluate_model(classifier, X_train, y_train, X_test, y_test, target_names)
 
 main()
