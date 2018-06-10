@@ -12,6 +12,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.svm import LinearSVC
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.multiclass import OneVsRestClassifier
+from sklearn import metrics
 
 def validate_line(quote_and_label):
     return len(quote_and_label) == 2
@@ -36,13 +37,17 @@ def read_file(file_name):
     return input_quotes, input_labels
 
 # Print each line and the predicted values
-def predict_labels(classifier, X_train, y_train, X_test, labels_ordered):
+def predict_labels(classifier, X_train, y_train, X_test, y_test, target_names):
     classifier.fit(X_train, y_train)
     predicted = classifier.predict(X_test)
     for item, predictions in zip(X_test, predicted):
         labels = [i for i, x in enumerate(predictions) if x]
-        print('%s => %s' % (item, ', '.join(labels_ordered[x] for x in labels)))
-        pass
+        print('%s => %s' % (item, ', '.join(target_names[x] for x in labels)))
+
+def evaluate_model(classifier, X_train, y_train, X_test, y_test, target_names):
+    classifier.fit(X_train, y_train)
+    predicted = classifier.predict(X_test)
+    print(metrics.classification_report(y_test, predicted, target_names=target_names))
 
 
 def main():
@@ -61,6 +66,7 @@ def main():
         ('clf', OneVsRestClassifier(LinearSVC()))]) # model for classification
 
 
-    predict_labels(classifier, input_quotes, binary_labels, input_quotes, labels_ordered)
+    predict_labels(classifier, input_quotes, binary_labels, input_quotes, binary_labels, labels_ordered)
+    evaluate_model(classifier, input_quotes, binary_labels, input_quotes, binary_labels, labels_ordered)
 
 main()
